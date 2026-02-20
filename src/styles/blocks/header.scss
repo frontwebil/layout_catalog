@@ -1,11 +1,11 @@
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 0 50px;
+  padding: 0 $header-horizontal-padding;
   align-items: center;
-  background: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-  font-size: 12px;
+  background: $color-white;
+  box-shadow: $header-shadow;
+  font-size: $header-font-size;
 }
 
 .nav {
@@ -13,8 +13,8 @@
 }
 
 .header__logo-link {
-  width: 40px;
-  height: 40px;
+  width: $logo-size;
+  height: $logo-size;
 }
 
 .nav__list {
@@ -25,7 +25,7 @@
 }
 
 .nav__item {
-  margin-right: 20px;
+  margin-right: $nav-item-spacing;
   text-decoration: none;
 }
 
@@ -35,31 +35,31 @@
 
 .nav__link {
   display: inline-block;
-  color: #060b35;
+  color: $color-dark-primary;
   text-decoration: none;
   text-transform: uppercase;
   transition: color 0.3s;
-  line-height: 60px;
+  line-height: $nav-line-height;
   font-weight: 500;
   letter-spacing: 0;
 }
 
 .nav__link:hover {
-  color: var(--accent-color);
+  color: $accent-color;
 }
 
 .is-active {
-  color: var(--accent-color);
+  color: $accent-color;
   position: relative;
 }
 
 .is-active::after {
-  content: ' ';
+  content: '';
   position: absolute;
   bottom: 0;
   display: block;
-  background: var(--accent-color);
+  background: $accent-color;
   border-radius: 2px;
   width: 100%;
-  height: 4px;
+  height: $active-underline-height;
 }

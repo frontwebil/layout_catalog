@@ -1,12 +1,8 @@
-@import './blocks/header';
 @import 'utils/variables';
+@import './blocks/header';
 @import 'blocks/card';
 @import 'blocks/stars';
 @import 'blocks/main';
-
-:root {
-  --accent-color: #00acdc;
-}
 
 body {
   margin: 0;
